@@ -1,0 +1,34 @@
+@media screen and (max-width: 700px) {
+    header .container{
+        display: flex;
+        flex-direction:column; 
+        /*max-width é até qual tamanho de tela a página responderá de uma devida forma, aqui usamos o 700px, ou seja, até 700px ela agirá dessas formas*/
+        /*Nossos botões de seleção serão dispostos em coluna em telas menores do que 700px*/
+        justify-content: center;
+    }
+    .botoes{
+        margin: 10px 10px 20px 0px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .botao{
+        margin-top: 12px;
+        width: 320px;
+    }
+
+    .item{
+        margin-top: 10px;
+    }
+    
+    .item:hover{
+    transform:scale(1.10);
+    /*crescimento de 1.10 ao invés de 1.25 em telas menores para comportar melhor a imagem*/
+    }
+}    
+
+@media screen and (min-width:1000px){
+    .descricao{
+        width: 50%;
+    }
+}

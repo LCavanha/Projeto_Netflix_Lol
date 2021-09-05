@@ -1,0 +1,149 @@
+:root{
+    --roxa:#7c2fd4;
+    --preta: #141414;
+}
+
+/* ELEMENTOS BASE*/
+
+/* root é onde definimos alguns padrões em variáveis, nesse caso a coloração
+*/
+
+*{  
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* O * traz o padrão para todos os objetos, o box-sizing: border-box serve para ajustar o texto dentro de sua caixa imaginária sem que o conteúdo fique cortado
+*/
+
+body{
+    background-color: var(--preta);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: white;
+}
+
+/* neste body definimos a cor de fundo utilizando nossa variável da raiz e a fonte da página
+*/
+
+header .container{
+    display: flex;
+    flex-direction:row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* O display é nossa tela, utilizar o flex faz com que os elementos sejam alinhados, não ficando nenhum acima ou abaixo, por padrão o flex-direction é row, os itens foram alinhados ao centro com 'space-between' as tags h2 e nav
+*/
+
+header .logo{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    color: var(--roxa);
+    margin-left: 10px;
+}
+
+/* na classe 'logo', foi alterado o tamanho da fonte, a família da fonte e definida sua cor pela raiz
+*/
+
+header nav a{
+    text-decoration: none;
+    color: aquamarine;
+    margin-right: 10px;
+}
+
+/* Aqui definimos a cor de nossos links e a margem entre eles, o text-decoration: none foi utilizado para remover o subscrito dos links
+*/
+
+header nav a:hover{
+    color: azure;
+    font-size: 18px;
+}
+
+/* :hoover é para quando o mouse passar por cima do item, definido como mudar de cor para azure
+*/
+
+/* AKSHAN */
+
+.img-principal{
+    font-size: 16px;
+    background: linear-gradient(rgba(0,0,0,.50), rgba(0,0,0,.50)100%), url('/img/img-principal.jpg');
+
+    height: 400px; /*tamanho da imagem inicial*/
+    background-size: cover; /*enquadra a imagem dentro da caixa do tamanho definido em height*/
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.img-principal .descricao{
+    margin-bottom: 60px;
+    margin-top: 15px;
+}
+
+.titulo{
+    font-size: 50px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin-top: 15%;
+}
+
+
+
+.botao{
+    background-color: rgba(0, 0, 0, .50);
+    border: none;
+    color: white;
+
+    padding: 15px 30px;
+    margin-right: 15px;
+    font-size: 12px;
+
+    cursor: pointer; /* Cursos muda de seta para opção de clique */
+    transition: .5s ease all; /*Suaviza a transição de cor ao passar o mouse por cima do botão*/
+}
+
+
+
+.botao:hover{
+    background-color: var(--roxa);
+    color: black;
+    font-size: 18px;
+    /*hover é quando o mouse passar por cima do botão, ficará com fundo roxo, letra preta e fonte 18px*/
+}
+
+.botao i{
+    margin-right: 10px;
+    /*Margem do icone presente no botão, à direita para afastar do texto*/
+}
+
+.container{
+    margin-left: 30px;
+    margin-right: 15px;
+}
+
+.img-principal .container{
+    width: 75%;
+    /*limita o espaço disponível para a caixa*/
+}
+
+.box-img{
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+
+.item{
+    margin-top: 10px;
+    transition: all 1s ease;
+    /*utilizado para melhorar a transição do crescimento da imagem quando o mouse passa por cima, também foi utilizado nos botões*/
+}
+
+
+.item:hover{
+    margin: 0px;
+    transform:scale(1.25);
+    /*margem retirada pela melhor enquadramento e aumentou de 1.25 em seu tamanho quando mouse passa por cima*/
+}
+

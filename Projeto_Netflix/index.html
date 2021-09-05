@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>League of Legends</title>
+    <link rel="stylesheet" href="style/main.css">
+
+    <!--Responsividade-->
+    <link rel="stylesheet" href="style/responsive.css">
+
+    <!--OWL CSS-->
+    <link rel="stylesheet" href="style/owl/owl.carousel.min.css">
+    <link rel="stylesheet" href="style/owl/owl.theme.default.min.css">
+
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <h2 class="logo">LEAGUE OF LEGENDS</h2>
+            <nav>
+                <a href="#" onclick="clicou()">Início</a>
+                <a href="https://www.leagueoflegends.com/pt-br/champions/" target="_blank">Campeões</a>
+                <a href="https://leagueoflegends.fandom.com/wiki/Events#Upcoming_Events" target="_blank">Eventos</a>
+                <a href="https://leagueoflegends.fandom.com/wiki/List_of_items" target="_blank">Itens</a>
+                <a href="https://www.leagueoflegends.com/pt-br/how-to-play/?_gl=1*g596zn*_ga*MTc3Mjg3ODA2Mi4xNjMwNzAyODk5*_ga_FXBJE5DEDD*MTYzMDg1NDQ3Mi4yLjEuMTYzMDg1NDU4Mi40OA.." target="_blank">Lanes</a>
+                <a href="https://www.leagueoflegends.com/pt-br/news/tags/patch-notes/" target="_blank">Novidades</a>
+
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="img-principal">
+            <div class="container">
+                <h3 class="titulo">NOVO CAMPEÃO</h3>
+                <p class="descricao"> É extremamente habilidoso na arte do combate furtivo, capaz de sumir da vista dos
+                    inimigos e reaparecer quando menos se espera.</p>
+                <div class="botoes">
+                    <button role="button" class="botao" onclick="window.location.href='https://www.youtube.com/watch?v=-pC0TMGF4wM';">
+                        <i class="fab fa-connectdevelop"></i>
+                       TRAILER
+                    </button>
+                    <button role="button" class="botao"onclick="window.location.href='https://www.youtube.com/watch?v=JERYL5lq6w8';">
+                        <i class="fas fa-book"></i>
+                        HISTÓRIA DO CAMPEÃO
+                    </button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <div class="carrosel-img">
+        <div class="owl-carousel owl-theme">
+            <div class="item">
+                <img class="box-img" src="img/TFT1.jpg" alt="Campeão Thresh de League of Legends" srcset="">
+            </div>
+            <div class="item">
+                <img class="box-img" src="img/aram1.jpg" alt="Campeão Braum de League of Legends" srcset="">
+            </div>
+            <div class="item">
+                <img class="box-img" src="img/SR1.jpg" alt="Os campeões Graves e Twisted Fate unidos em batalha" srcset="">
+            </div>
+            <div class="item">
+                <img class="box-img" src="img/fizz.jpg" alt="Campeão Fizz com seu tridente e tubarão amigo" srcset="">
+            </div>
+            <div class="item">
+                <img class="box-img" src="img/hey.jpg" alt="Campeão Talon utilizando a skin Lua Sangrenta" srcset="">
+            </div>
+        </div>
+    </div>
+
+    <!--Carregar JavaScript por último, pq inicialmente pode gerar algum problema, melhor deixar para o final quando tudo já foi renderizado-->
+
+    <script src="https://kit.fontawesome.com/0765113c23.js"></script>
+    <script src="js/owl/jquery.min.js"></script>
+    <script src="js/owl/owl.carousel.min.js"></script>
+    <script src="js/owl/setup.js"></script>
+
+</body>
+
+</html>
